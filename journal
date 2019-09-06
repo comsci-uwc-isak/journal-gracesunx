@@ -1,5 +1,11 @@
-In today's class: 
-- we learned Topic 3.1 Networking fundamentals: 11 types of different Networks (for ex. VPN, LAN, WAN...) and different 
-  types of network topologies
-- we played around with the Raspberry Pi: how to locate and find its IP address
-- reviewed how to use and code on Terminal
+In today's class we started off by learning Topic 3.1.3 - Describe how communication over networks is broken down into 
+different layers. We learned about the Open System Interconnection (OSI) model. It is a conceptional model that componentizes 
+the telecommunication functions into different layers. The model defines seven layers, and each layer sits independently on 
+top of another one, as long as they follow defined structures and characteristics. 
+
+Then, we connected to the raspberry pi's (ssh pi@...) web server (apache) and created a web page (Grace.html) under its IP 
+address by using html and CSS. I have learned some basic html, CSS, and Javascript before, however, I haven't been using it 
+for a long time, so today's lesson was a really good review for me. I was also a bit confused by the differences between web
+server and web page, so I googled it and now I understand: A web server is a computer hosting one or more websites. "Hosting" 
+means that all the web pages and their supporting files are available on that computer. The web server will send any web page 
+from the website it is hosting to any user's browser, per user request.  
