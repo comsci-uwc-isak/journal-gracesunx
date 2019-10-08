@@ -1,1 +1,36 @@
-We worked on our IA in class today. Learned how to make the Entity Relationship (ER) Diagram. 
+We got our test back today.
+
+public class Main {
+  public static void main(String[] args) {
+    double[] arr = {21, 33, 26, 39, 28, 32.5, 18.5, 27, 31.5, 29, 26.5, 31.5, 24, 35.5, 22.5, 25, 25.5, 19};
+
+    boolean flag = true;
+        while (flag == true){
+            flag = false;
+            for (int x = 0; x < arr.length - 1; x++){
+                if (arr[x] > arr[x + 1]){
+                    double temp = arr[x];
+                    arr[x] = arr[x + 1];
+                    arr[x + 1] = temp;
+                    flag = true;
+                }
+            }
+        }
+
+    double sum = 0;
+    for (int a=0; a<arr.length; a++) {
+      sum = sum+arr[a];
+    }
+    int midnum = arr.length/2;
+    double median = (arr[midnum-1] + arr[midnum])/2;
+    double q1 = arr[midnum/2];
+    double q3 = arr[midnum+midnum/2];
+    double iqr = q3-q1;
+
+    for (int y = 0; y < arr.length; y++) {
+        System.out.println(arr[y]);
+    }
+    System.out.println("Mean:" + sum/arr.length + ", " + "Median:" + median + ", " + "Q1:" + q1 + ", " + "Q3:" + q3 + ", " + "IQR:" + iqr);
+
+  }
+}
